@@ -13,4 +13,5 @@ Binary adder implemented in the TS type system `src/binary.ts`.
 
 ## References
 
-[Implementing Arithmetic Within TypeScript’s Type System](https://itnext.io/implementing-arithmetic-within-typescripts-type-system-a1ef140a6f6f)
+- [Implementing Arithmetic Within TypeScript’s Type System](https://itnext.io/implementing-arithmetic-within-typescripts-type-system-a1ef140a6f6f)
+- [Binary Adder Half and Full Adder](https://www.electrical4u.com/binary-adder-half-and-full-adder/)
