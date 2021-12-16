@@ -1,4 +1,4 @@
-import { LengthOfTuple, TupleOfLength } from "./tuples";
+import { LengthOfTuple, TupleOfLength } from "../src/tuples";
 
 // For a generic array, the computed type is `number`, because it is not a tuple.
 type TypeIsNumber = LengthOfTuple<unknown[]>
