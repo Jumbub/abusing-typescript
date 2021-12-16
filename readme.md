@@ -1,10 +1,11 @@
-# Typescript is cool
+# Abusing the TypeScript type system
 
-## Playground
+## Notable abuse
 
-Binary adder implemented in the TS type system `src/binary.ts`.
+- Binary adder implemented in the TS type system `usage/binary.ts`.
+- Generic array manipulation implemented in the TS type system `usage/array.ts`.
 
-## Notable features
+## Other useful TS features
 
 - https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-0.html#class-property-inference-from-constructors
 - https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-1.html#key-remapping-in-mapped-types
