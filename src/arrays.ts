@@ -9,12 +9,10 @@ export type Enqueue<Value extends unknown, Input extends unknown[]> = [Value, ..
 
 export type Map<
   Input extends unknown[],
-  Function extends Lambda<unknown, unknown, unknown>,
+  Func extends Ternary<unknown, unknown, unknown>,
   Output extends unknown[] = [],
 > = Input extends [infer Current, ...unknown[]]
-  ? Function extends Lambda<infer Check, infer TrueResult, infer FalseResult>
-    ? Current extends Check
-      ? Map<Dequeue<Input>, Function, Push<TrueResult, Output>>
-      : Map<Dequeue<Input>, Function, Push<FalseResult, Output>>
+  ? Apply<Func, Current> extends infer Result
+    ? Map<Dequeue<Input>, Func, Push<Result, Output>>
     : never
   : Output;

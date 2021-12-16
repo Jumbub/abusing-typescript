@@ -9,5 +9,5 @@ type Manipulate2 = Pop<[1, 2, 3]>
 type Manipulate3 = Enqueue<'hi', [1, 2, 3]>
 type Manipulate4 = Push<'hi', [1, 2, 3]>
 
-type FlipBit = Lambda<0, 1, 0>
+type FlipBit = Ternary<0, 1, 0>
 type FlippedBits = Map<[0, 1, 0], FlipBit>
